@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://shivshaktigems.github.io/SSGJ/sitemap.xml
