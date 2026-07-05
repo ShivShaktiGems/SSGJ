@@ -13,6 +13,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Shiv Shakti Diamonds — Natural Loose Diamond Manufacturer, Surat</title>
 <meta name="description" content="Trusted manufacturer of high-quality natural loose diamonds in Surat, India. Supplying wholesalers, jewellery manufacturers and luxury brands worldwide."/>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cg stroke='%23C8A24A' stroke-width='7' fill='none' stroke-linejoin='round' stroke-linecap='round'%3E%3Cpath d='M22 40 L78 40 L66 22 L34 22 Z'/%3E%3Cpath d='M22 40 L78 40 L50 84 Z'/%3E%3Cline x1='34' y1='22' x2='39' y2='40'/%3E%3Cline x1='66' y1='22' x2='61' y2='40'/%3E%3Cline x1='39' y1='40' x2='50' y2='84'/%3E%3Cline x1='61' y1='40' x2='50' y2='84'/%3E%3C/g%3E%3C/svg%3E"/>
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T0NBB1EC44"></script>
@@ -142,7 +143,7 @@ nav.scrolled .hamburger span{background:var(--navy);}
 .nav-cta::after{display:none;}
 .nav-cta:hover{background:var(--gold);color:var(--navy)!important;}
 .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px;z-index:101;}
-.hamburger span{display:block;width:26px;height:1.5px;background:var(--navy);transition:.3s;}
+.hamburger span{display:block;width:26px;height:1.5px;background:var(--ivory);transition:.3s;}
 .hamburger.open span:nth-child(1){transform:translateY(6.5px) rotate(45deg);}
 .hamburger.open span:nth-child(2){opacity:0;}
 .hamburger.open span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg);}
@@ -205,8 +206,8 @@ header{
 
 /* ═══ MARQUEE / TRUST STRIP ═══ */
 .strip{background:var(--navy);padding:26px 0;overflow:hidden;border-top:1px solid rgba(200,162,74,.2);}
-.strip-track{display:flex;gap:80px;white-space:nowrap;animation:scroll 28s linear infinite;width:max-content;}
-.strip-item{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:20px;color:rgba(248,246,241,.55);display:flex;align-items:center;gap:80px;}
+.strip-track{display:flex;white-space:nowrap;animation:scroll 28s linear infinite;width:max-content;}
+.strip-item{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:20px;color:rgba(248,246,241,.55);display:flex;align-items:center;gap:80px;padding-right:80px;}
 .strip-item::after{content:'◆';color:var(--gold);font-size:9px;font-style:normal;}
 @keyframes scroll{to{transform:translateX(-50%);}}
 
@@ -389,8 +390,7 @@ footer{background:var(--navy);color:rgba(248,246,241,.6);padding:80px 6vw 36px;}
   .nav-links.open ~ .hamburger span{background:var(--ivory);}
   .section{padding:80px 7vw;}
   .hero-trust{gap:34px;}
-  .strip-item{font-size:16px;gap:50px;}
-  .strip-item::after{gap:50px;}
+  .strip-item{font-size:16px;gap:50px;padding-right:50px;}
 }
 @media(max-width:760px){
   /* hero becomes a natural vertical flow, no overlap */
@@ -698,12 +698,12 @@ footer{background:var(--navy);color:rgba(248,246,241,.6);padding:80px 6vw 36px;}
     <div class="form-box">
       <h3>Send an Enquiry</h3>
       <p class="fsub">Tell us what you're looking for and we'll get back to you shortly.</p>
-      <div class="fg"><label class="fl">Company / Name</label><input class="fi" type="text" id="f_name" placeholder="e.g. Royal Gems Trading"/></div>
+      <div class="fg"><label class="fl" for="f_name">Company / Name</label><input class="fi" type="text" id="f_name" placeholder="e.g. Royal Gems Trading"/></div>
       <div class="frow">
-        <div class="fg"><label class="fl">Phone / WhatsApp</label><input class="fi" type="tel" id="f_phone" placeholder="+__ ________"/></div>
-        <div class="fg"><label class="fl">Country / City</label><input class="fi" type="text" id="f_city" placeholder="e.g. Dubai, UAE"/></div>
+        <div class="fg"><label class="fl" for="f_phone">Phone / WhatsApp</label><input class="fi" type="tel" id="f_phone" placeholder="+__ ________"/></div>
+        <div class="fg"><label class="fl" for="f_city">Country / City</label><input class="fi" type="text" id="f_city" placeholder="e.g. Dubai, UAE"/></div>
       </div>
-      <div class="fg"><label class="fl">Diamond Shape</label>
+      <div class="fg"><label class="fl" for="f_shape">Diamond Shape</label>
         <select class="fs" id="f_shape">
           <option value="">Select a shape…</option>
           <option>Round</option><option>Baguette</option><option>Tapered Baguette</option>
@@ -711,10 +711,10 @@ footer{background:var(--navy);color:rgba(248,246,241,.6);padding:80px 6vw 36px;}
         </select>
       </div>
       <div class="frow">
-        <div class="fg"><label class="fl">Size</label><input class="fi" type="text" id="f_size" placeholder="e.g. 2.0mm, 0.30ct"/></div>
-        <div class="fg"><label class="fl">Quantity</label><input class="fi" type="text" id="f_qty" placeholder="e.g. 50 pcs, 5 ct"/></div>
+        <div class="fg"><label class="fl" for="f_size">Size</label><input class="fi" type="text" id="f_size" placeholder="e.g. 2.0mm, 0.30ct"/></div>
+        <div class="fg"><label class="fl" for="f_qty">Quantity</label><input class="fi" type="text" id="f_qty" placeholder="e.g. 50 pcs, 5 ct"/></div>
       </div>
-      <div class="fg"><label class="fl">Requirements</label><textarea class="ft" id="f_note" placeholder="Colour, clarity, budget or any other details…"></textarea></div>
+      <div class="fg"><label class="fl" for="f_note">Requirements</label><textarea class="ft" id="f_note" placeholder="Colour, clarity, budget or any other details…"></textarea></div>
       <button class="btn fbtn" onclick="sendEnquiry()">Send Enquiry</button>
       <a href="https://wa.me/917600880141?text=Hello%20Shiv%20Shakti%20Diamonds%2C%20I%20would%20like%20to%20enquire." target="_blank" class="wbtn"><span>✦</span> Or send via WhatsApp</a>
     </div>
@@ -777,9 +777,9 @@ var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isInter
 document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
 // enquiry → whatsapp
 function sendEnquiry(){
-  var g=function(id){return (document.getElementById(id).value||'—');};
-  var msg='Hello Shiv Shakti Diamonds! ✦%0A%0A*New Enquiry*%0A%0A*Company:* '+g('f_name')+'%0A*Phone:* '+g('f_phone')+'%0A*Location:* '+g('f_city')+'%0A*Shape:* '+g('f_shape')+'%0A*Size:* '+g('f_size')+'%0A*Quantity:* '+g('f_qty')+'%0A*Requirements:* '+g('f_note');
-  window.open('https://wa.me/917600880141?text='+msg,'_blank');
+  var g=function(id){return (document.getElementById(id).value.trim()||'—');};
+  var msg='Hello Shiv Shakti Diamonds! ✦\n\n*New Enquiry*\n\n*Company:* '+g('f_name')+'\n*Phone:* '+g('f_phone')+'\n*Location:* '+g('f_city')+'\n*Shape:* '+g('f_shape')+'\n*Size:* '+g('f_size')+'\n*Quantity:* '+g('f_qty')+'\n*Requirements:* '+g('f_note');
+  window.open('https://wa.me/917600880141?text='+encodeURIComponent(msg),'_blank');
 }
 </script>
 </body>
